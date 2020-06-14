@@ -1,4 +1,9 @@
 # 通用爬虫
+>- configs/ 通用爬虫的配置
+>- spiders/universal 通用爬虫
+>- rules.py 存放爬取规则
+>- urls.py 存放动态生成链接函数
+>- utils.py 一些实用的函数集合  
 >##CrawlSpider
 >指定规则来实现页面提取，这些爬取规则由一个专门的数据结构Rule表示。
 >Rule里包含了提取和跟进页面的配置，Spider会根据Rule来确定当前页面中的哪些
