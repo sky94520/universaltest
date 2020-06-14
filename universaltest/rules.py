@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 # -*-coding:utf-8 -*-
+"""
+提取规则存放，当callback为None时，默认跟进该页面
+"""
 
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule

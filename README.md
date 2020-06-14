@@ -4,7 +4,7 @@
 >- rules.py 存放爬取规则
 >- urls.py 存放动态生成链接函数
 >- utils.py 一些实用的函数集合  
->##CrawlSpider
+>## CrawlSpider
 >指定规则来实现页面提取，这些爬取规则由一个专门的数据结构Rule表示。
 >Rule里包含了提取和跟进页面的配置，Spider会根据Rule来确定当前页面中的哪些
 >链接需要继续爬取，哪些页面的爬取结果需要用到哪个方法解析。  
@@ -20,7 +20,7 @@
 >>* process_links 从link_extractor中获取到链接列表后，该函数被调用，主要用于过滤
 >>* process_request 提取到request后，该函数就会被调用，对request进行处理，必须返回request或None
 >
->##LinkExtractor类  
+>## LinkExtractor类  
 >> LinkExtractor(allow=(), deny=(), allow_domains=(), deny_domains=(), 
 >>restrict_xpaths=(), restrict_css=(), tags=('a','area'), attrs=('href',))  
 >>>* allow 正则表达式列表，从当前页面提取出的链接哪些是符合要求的   
@@ -33,7 +33,7 @@
 >default_output_processor 默认完整输出
 ><key>_out 作为item字段的处理器
 >
->##UniversalSpider类
+>## UniversalSpider类
 >主要用到了配置文件/configs/*.json
 >格式如下：  
 >```

@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 # -*-coding:utf-8 -*-
+"""
+实用工具包
+"""
 
 from os.path import realpath, dirname
 import json

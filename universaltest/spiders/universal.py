@@ -11,6 +11,7 @@ from universaltest import urls
 
 
 class UniversalSpider(CrawlSpider):
+    """通用爬虫：需要配置文件、rules、item、ItemLoader等"""
     name = 'universal'
 
     def __init__(self, name, *args, **kwargs):
@@ -44,7 +45,6 @@ class UniversalSpider(CrawlSpider):
                 for extractor in value:
                     # method：使用什么方法
                     method, args, r = extractor['method'], extractor['args'], extractor['re']
-                    # 判断
                     if method == 'xpath':
                         loader.add_xpath(key, *args, **{'re': r})
                     elif method == 'css':

@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 # -*-coding:utf-8 -*-
+"""
+用于动态生成起始链接
+"""
 
 
 def china(start, end):
